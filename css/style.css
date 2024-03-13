@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background: hsl(216, 12%, 8%);
+  height: 100vh;
+}
+
+p {
+  font-size: 15px;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+}
+main .container .box {
+  background: hsl(213, 19%, 18%);
+  padding: 30px 40px;
+  width: 420px;
+  border-radius: 2em;
+}
+main .container .box img {
+  border: 1rem solid #3a4655;
+  background: #3a4655;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+main .container .box h2 {
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+main .container .box p {
+  word-spacing: 1px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+main .container .box .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+main .container .box .rating span {
+  border: 1rem solid #3a4655;
+  background: #3a4655;
+  border-radius: 50%;
+  padding-inline: 5px;
+  cursor: pointer;
+}
+main .container .box .rating span.active {
+  background: hsl(217, 12%, 63%);
+  border-color: hsl(217, 12%, 63%);
+}
+main .container .box .rating span:hover {
+  color: hsl(0, 0%, 100%);
+  background: hsl(25, 97%, 53%);
+  border-color: hsl(25, 97%, 53%);
+}
+main .container .box .submit {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  background: hsl(25, 97%, 53%);
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 50px;
+}
+main .container .box .submit:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+main .container .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container .modal .modal-content {
+  text-align: center;
+  background: hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 40px;
+  width: 420px;
+  border-radius: 2em;
+}
+main .container .modal .modal-content img {
+  margin-bottom: 40px;
+}
+main .container .modal .modal-content span.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .container .modal .modal-content p.rating {
+  color: hsl(25, 97%, 53%);
+  background: #3a4655;
+  padding: 5px 15px;
+  width: fit-content;
+  border-radius: 50px;
+  word-spacing: 1px;
+  margin-top: 40px;
+  margin-inline: auto;
+}
+main .container .modal .modal-content p.rating span {
+  font-weight: bold;
+}
+main .container .modal .modal-content h2 {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin-top: 40px;
+}
+main .container .modal .modal-content p {
+  line-height: 1.7;
+  margin-top: 30px;
+}
+main .container .attribution {
+  padding: 30px;
+  font-size: 11px;
+  text-align: center;
+}
+main .container .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
